@@ -70,6 +70,10 @@ LOGICIEL R ET RAPPEL DES PROBABILITÉS
 \begin_layout Author
 
 \noun on
+Maÿlis Boudier
+\begin_inset Newline newline
+\end_inset
+
 Juste Raimbault
 \end_layout
 
@@ -79,16 +83,9 @@ Question 1
 
 \begin_layout Standard
 The command 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{rnorm}
-\end_layout
-
-\end_inset
-
+\family typewriter
+rnorm
+\family default
  generates random numbers following a centered gaussian law, for which the
  density is, if 
 \begin_inset Formula $\sigma$
@@ -114,14 +111,178 @@ es of the histogram, since the bars can go above the theoretical curve),
 \end_inset
 
  by 
-\begin_inset Formula $\sigma=\{sd(x)\}$
+\begin_inset Formula $\sigma=$
 \end_inset
 
+ 
+\family typewriter
+sd(x)
+\family default
 .
 \end_layout
 
 \begin_layout Section*
 Question 2
+\end_layout
+
+\begin_layout Standard
+See code for loading of data of geyser eruptions.
+\end_layout
+
+\begin_layout Standard
+Command 
+\family typewriter
+summary(geyser)
+\family default
+ gives basic informations about waiting times between eruptions and duration
+ of each eruption.
+ Result are presented in figure 1.
+ Figure 2 presents the empirical distributions and figure 3 histogram for
+ both series.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename geyser.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Basic statistical data for both series
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename geyserLaws.pdf
+	scale 45
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Empirical distributions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename geyserHist.pdf
+	scale 45
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Histograms for geyser waiting time and duration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -132,17 +293,12 @@ Question 3
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename boxplot35.pdf
-	lyxscale 20
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -160,6 +316,528 @@ Boxplots of 3.5
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The parallel boxplots of 3.5 are presented in figure 4.
+\end_layout
+
+\begin_layout Paragraph
+(a)
+\end_layout
+
+\begin_layout Standard
+The most dispersed distribution is the first one since dispersion corresponds
+ to the size of the box with tails (from A to B).
+\end_layout
+
+\begin_layout Paragraph
+(b)
+\end_layout
+
+\begin_layout Standard
+The second distributions seems to have more outliers points than the two
+ others.
+\end_layout
+
+\begin_layout Section*
+Question 4
+\end_layout
+
+\begin_layout Paragraph
+(a)
+\end_layout
+
+\begin_layout Standard
+The weight that such a proportion of cable can carry correponds to the 3rd
+ quartile, i.
+ e.
+ 12,25 T.
+\end_layout
+
+\begin_layout Paragraph
+(b)
+\end_layout
+
+\begin_layout Standard
+The boxplot can be seen in figure 5.
+ There is one outlier (point at 7), because it appears to be outside the
+ standard values (and is therfore represented that way).
+ The value of the third quartile if the coordinate of the upper bound of
+ the box.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename charges.pdf
+	scale 70
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Boxplot for cables capacity data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+(c)
+\end_layout
+
+\begin_layout Standard
+The parts of the box around the median are not of same size and the tails
+ are also of different sizes, so the distribution is not symmetric.
+\end_layout
+
+\begin_layout Section*
+Question 5
+\end_layout
+
+\begin_layout Standard
+See code for graphic representation of empirical laws.
+\end_layout
+
+\begin_layout Paragraph
+(i)
+\end_layout
+
+\begin_layout Standard
+Figure 5 shows superposition of empirical curve of the law of 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+ and the curve 
+\begin_inset Formula $1-exp(-x)$
+\end_inset
+
+.
+ The law of 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+ should be an exponential law since their shapes are very close.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename lawT.pdf
+	scale 35
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Law of 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+(ii)
+\end_layout
+
+\begin_layout Standard
+See figure 6.
+ The law of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ seems to be not so far from the function 
+\begin_inset Formula $\frac{1}{\pi}arctan(x)+0,5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename lawX.pdf
+	scale 35
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Law of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section*
+Source code
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize},numbers=left,numberstyle={\footnotesize},stepnumber=5"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+##STNUM - TP1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+##Question 1 ##cf rapport
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+##Question 2
+\end_layout
+
+\begin_layout Plain Layout
+
+library(MASS)
+\end_layout
+
+\begin_layout Plain Layout
+
+data(geyser)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#Description statistique
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(geyser)
+\end_layout
+
+\begin_layout Plain Layout
+
+#Fonction de repartition
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfcol=c(2,1),bg="lightyellow")
+\end_layout
+
+\begin_layout Plain Layout
+
+n=length(geyser$waiting)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(sort(geyser$waiting), 1:n/n, type="s", ylim=c(0,1), xlab="", ylab="",main="
+law for waiting time")
+\end_layout
+
+\begin_layout Plain Layout
+
+n=length(geyser$duration)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(sort(geyser$duration), 1:n/n, type="s", ylim=c(0,1), xlab="", ylab="",main=
+"law for duration")
+\end_layout
+
+\begin_layout Plain Layout
+
+#Boxplots par(mfcol=c(2,1),bg="lightyellow")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(geyser$waiting) 
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(geyser$duration)
+\end_layout
+
+\begin_layout Plain Layout
+
+#histogrammes
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfcol=c(2,1),bg="lightyellow")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(geyser$waiting,breaks=50)
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(geyser$duration,breaks=50)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+##Question 3 
+\end_layout
+
+\begin_layout Plain Layout
+
+##cf rapport
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+##Question 4
+\end_layout
+
+\begin_layout Plain Layout
+
+charges<-c(10.1,12.2,9.3,12.4,13.7,10.8,11.6,10.1,11.2,11.3,12.2,12.6,11.5,9.2,14.2,11.1,13.3,11.8
+,7.1,10.5)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+##a 
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(charges)
+\end_layout
+
+\begin_layout Plain Layout
+
+##The value of the 3rd quartile is 12.25
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+##b 
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(charges,main="charges")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+## Question 5
+\end_layout
+
+\begin_layout Plain Layout
+
+U = runif(10000,0,1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+V = runif(10000,0,1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+T = -2*log(U)
+\end_layout
+
+\begin_layout Plain Layout
+
+X = sqrt(T)*cos(2*pi*V)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#i : loi de T ?
+\end_layout
+
+\begin_layout Plain Layout
+
+n=length(T)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(sort(T), 1:n/n, type="s", ylim=c(0,1), xlab="law of T", ylab="") 
+\end_layout
+
+\begin_layout Plain Layout
+
+curve(1-exp(-x),add=TRUE,col="blue",ylab="")
+\end_layout
+
+\begin_layout Plain Layout
+
+#ii : loi de X
+\end_layout
+
+\begin_layout Plain Layout
+
+n=length(X)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(sort(X), 1:n/n, type="s", ylim=c(0,1), xlab="law of X", ylab="")
+\end_layout
+
+\begin_layout Plain Layout
+
+curve(from = -5,to = 5,0.5+atan(x)/pi,add=TRUE,col="blue",ylab="")
 \end_layout
 
 \end_inset
